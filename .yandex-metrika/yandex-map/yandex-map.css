@@ -1,0 +1,349 @@
+/* Стили для новой структуры */
+.org-header h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #222;
+}
+
+.org-header p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.org-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 14px;
+}
+
+.rating-value {
+    font-weight: bold;
+    color: #222;
+    font-size: 14px;
+}
+
+.status.open {
+    color: #00b050;
+    font-size: 12px;
+}
+
+.org-contacts {
+    margin: 12px 0;
+}
+
+.org-contacts a {
+    display: block;
+    color: #007cba;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.org-contacts a:hover {
+    text-decoration: underline;
+}
+
+.org-address {
+    margin: 12px 0;
+}
+
+.org-address p {
+    margin: 0 0 8px 0;
+    color: #222;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.org-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.action-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15 px;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+}
+
+.action-btn:hover {
+    background: #f5f5f5;
+}
+
+.contact-btn.phone-btn {
+    background: #fcd93c;
+    color: #222;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 3px;
+}
+.org-actions .action-btn {
+    border-radius: 25px;
+}
+
+
+
+
+
+/* Стили для фильтров */
+.services-filter {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin: 40px 0 30px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+    border: 2px solid #fcd93c;
+    background: transparent;
+    color: #fcd93c;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+.filter-btn.active {
+    background: #fcd93c;
+    color: #222222;
+}
+
+/* Сетка услуг - всегда 4 в ряд */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Карточка услуги */
+.service-card {
+    background: #333333;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #444444;
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Адаптивность - всегда 4 в ряд */
+@media screen and (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 10px;
+    }
+    
+    .services-filter {
+        gap: 8px;
+        margin: 30px 0 20px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+        min-width: 90px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 0 8px;
+    }
+    
+    .services-filter {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+        min-width: 70px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media screen and (max-width: 360px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+        padding: 0 5px;
+    }
+}
+
+
+
+/* Стили для карточки бизнеса */
+.map-business-card {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    padding: 20px;
+    max-width: 320px;
+    z-index: 1000;
+}
+
+.org-card {
+    font-family: Arial, sans-serif;
+}
+
+.org-header h1 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    color: #222;
+}
+
+.org-header p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.org-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 16px;
+}
+
+.rating-value {
+    font-weight: bold;
+    color: #222;
+}
+
+.status.open {
+    color: #00b050;
+    font-size: 14px;
+}
+
+.org-contacts {
+    margin: 15px 0;
+}
+
+.phone, .website {
+    display: block;
+    color: #007cba;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.phone:hover, .website:hover {
+    text-decoration: underline;
+}
+
+.org-address {
+    margin: 15px 0;
+}
+
+.org-address p {
+    margin: 0 0 10px 0;
+    color: #222;
+}
+
+.action-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.action-btn:hover {
+    background: #f5f5f5;
+}
+
+.org-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.primary-btn {
+    background: #fcd93c;
+    color: #222;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.secondary-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Адаптивность */
+@media screen and (max-width: 768px) {
+    .map-business-card {
+        position: relative;
+        top: auto;
+        left: auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
