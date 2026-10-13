@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+
+:root {
+	--myfc: #テーマカラー;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-feature-settings: "palt";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+}
+
+figure {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align: baseline;
+	background:transparent;
+}
+
+img,
+svg {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: bottom;
+}
+
+
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+	max-width: 100%;
+}
+ul li{
+	list-style: none;
+}
+
