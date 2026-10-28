@@ -6,11 +6,8 @@ document.addEventListener('DOMContentLoaded',function(){
     ymaps.ready(function(){console.log('Yandex Maps ready');
         
         const shopCoords = [47.237151,39.740742];
-        
-        const myMap = new ymaps.Map('gmap', {
-            center: shopCoords, zoom: 17, controls: ['zoomControl','searchControl']
+        const myMap = new ymaps.Map('gmap',{center: shopCoords, zoom: 17, controls: ['zoomControl','searchControl']
         });console.log('Map created');
-
         const placemark = new ymaps.Placemark(shopCoords,{
             balloonContentHeader: '<strong>🚗 Золотая Подкова</strong>', balloonContentBody: 'г. Ростов-на-Дону, пл. Энергетиков<br>рынок "Рубин"', hintContent: 'Золотая Подкова - шиномонтаж'
         },{ preset: 'islands#redStretchyIcon', iconColor: '#ff0000' });
