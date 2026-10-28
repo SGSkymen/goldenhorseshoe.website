@@ -1469,13 +1469,11 @@ pre.wp-block-verse {
 
 
 
-/* Высота ТОЛЬКО для блока с автоперелистыванием */
 .work-ex .fade {
-    height: 800px; /* Высота только для этого блока */
+    height: 800px; 
     position: relative;
 }
 
-/* Автоперелистывание для полных слайдов */
 .full-slide {
     position: absolute;
     top: 0;
@@ -1486,7 +1484,6 @@ pre.wp-block-verse {
     animation: slideShow 16s infinite;
 }
 
-/* Задержки для каждого слайда */
 .full-slide:nth-child(1) {
     animation-delay: 0s;
 }
@@ -1495,7 +1492,6 @@ pre.wp-block-verse {
     animation-delay: 8s;
 }
 
-/* Анимация перелистывания */
 @keyframes slideShow {
     0% {
         opacity: 0;
@@ -1519,7 +1515,6 @@ pre.wp-block-verse {
     }
 }
 
-/* Убираем стрелки */
 .prev-arrow,
 .next-arrow {
     display: none !important;
@@ -1532,7 +1527,6 @@ pre.wp-block-verse {
 
 
 
-/* Автоперелистывание для полных слайдов */
 .full-slide {
     position: absolute;
     top: 0;
@@ -1542,7 +1536,6 @@ pre.wp-block-verse {
     animation: slideShow 16s infinite;
 }
 
-/* Задержки для каждого слайда */
 .full-slide:nth-child(1) {
     animation-delay: 0s;
 }
@@ -1551,7 +1544,6 @@ pre.wp-block-verse {
     animation-delay: 8s;
 }
 
-/* Анимация перелистывания */
 @keyframes slideShow {
     0% {
         opacity: 0;
@@ -1575,12 +1567,10 @@ pre.wp-block-verse {
     }
 }
 
-/* Контейнер для слайдов */
 .fade {
     position: relative;
 }
 
-/* Убираем стрелки */
 .prev-arrow,
 .next-arrow {
     display: none !important;
@@ -1604,7 +1594,6 @@ pre.wp-block-verse {
     margin-bottom: 12px;
 }
 
-/* Квадратные кнопки как в fankit */
 .slide-link {
     display: block;
     text-align: center;
@@ -1625,7 +1614,6 @@ pre.wp-block-verse {
     border-color: #fcd93c;
 }
 
-/* Адаптивность */
 @media screen and (max-width: 768px) {
     .slide-content-box {
         padding: 15px;
@@ -1700,7 +1688,6 @@ pre.wp-block-verse {
     width: 350px;
 }
 
-/* Адаптивность */
 @media screen and (max-width: 768px) {
     .top-news-centerbox {
         flex-direction: column;
